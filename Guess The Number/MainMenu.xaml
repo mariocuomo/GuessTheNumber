@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Guess_The_Number.MainMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guess_The_Number"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Orange">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Content="PLAY" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="80" FontFamily="GOTHIC" FontWeight="Medium" Click="Play"></Button>
+            <TextBlock Grid.Row="1" Text="ARE YOU READY?" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="GOTHIC" FontWeight="Thin"></TextBlock>
+
+        </Grid>
+
+        <Grid Grid.Row="1" Background="DodgerBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Content="ABOUT" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="80" FontFamily="GOTHIC" FontWeight="Medium" Click="About"></Button>
+            <TextBlock Grid.Row="1" Text="READ MORE ABOUT" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="GOTHIC" FontWeight="Thin"></TextBlock>
+
+        </Grid>
+        
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Content="EXIT" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="80" FontFamily="GOTHIC" FontWeight="Medium" Click="Exit"></Button>
+            <TextBlock Grid.Row="1" Text="CLOSE THE APP" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="GOTHIC" FontWeight="Thin"></TextBlock>
+
+        </Grid>
+    </Grid>
+</Page>
